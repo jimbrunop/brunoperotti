@@ -1,0 +1,20 @@
+#image01 {
+	display: none;
+}
+
+.btnImg {
+	display: block;
+	margin: 11px 0px 18px 94px;
+}
+
+#infoCanvasa{
+	display: block;
+	margin-top: 30px;
+}
+
+.infoImg{
+	display: inline-block;
+	width: 128px;
+	margin: 1em;
+}
+

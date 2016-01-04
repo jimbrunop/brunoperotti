@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">	
+	<link rel="icon" href="static/img/favicon.ico" type="image/x-icon"/>
+	<link rel="stylesheet" type="text/css" href="static/css/index.css">
+	<script src="/bower_components/jquery/dist/jquery.js"></script>
+	<script src="src/js/jquery-2.1.4.min.js"></script>
+
+	
+	<title>AV01</title>
+</head>
+<body>
+
+	<img id="image01" width="500" height="400" src="static/img/godfather.jpg" alt="godfather">
+
+
+	<button id="btnMostrar" class="btnImg"  type="button" value="clickAction" >Clique para transpor a imagem ao canvas</button>
+	
+	<canvas id='canvasa'></canvas>
+	
+	<div id='infoCanvasa'>
+		<div class="infoImgTitle">Informacoes imagem</div>
+		<br>
+		<div class='infoImg'>Width:<span id="imgInfoWidth" ></span>px</div>
+		<div class='infoImg'>Height:<span id="imgInfoHeight" ></span>px</div>
+		<div class='infoImg'>Bytes: <span id="img-size" >bytes</span></div>
+	</div>
+
+	<button id="btnComprimir" class="btnImg">Comprimir</button>
+	<div id='infoCanvasComprimido'>
+		<div class="infoImgTitle">Informacoes imagem Comprimida</div>
+		<br>
+		<div class='infoImg'>Bytes: <span id="canvasComprimido" >bytes</span></div>
+		<div class='infoImg'>Taxa de compressão: <span id="percentualCompressao" ></span>%</div>
+	</div>
+	<button id="btnDescomprimir" class="btnImg">Descomprimir</button>
+	<canvas id='canvasb'></canvas>
+	<script type="text/javascript" src="src/js/index.js" ></script>
+</body>
+</html>

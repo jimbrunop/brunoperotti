@@ -1,0 +1,8 @@
+{
+  "name": "av01-mult",
+  "version": "0.0.4",
+  "devDependencies": {
+    "grunt": "~0.4.1",
+    "grunt-http-server": "^1.10.0"
+  }
+}
