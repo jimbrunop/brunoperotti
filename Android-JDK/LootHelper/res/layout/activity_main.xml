@@ -1,0 +1,64 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background = "@drawable/background"
+    android:padding="10dp"
+    tools:context="com.example.loothelper.MainActivity" >
+
+   <Button
+        android:id="@+id/btnMenuItem"
+        style="@android:style/Widget.Button"
+         android:drawableLeft="@android:drawable/ic_input_add"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="eventoButton"
+        android:text="@string/itemMenu" />
+
+    <Button
+        android:id="@+id/btnMenuPersonagem"
+        style="@android:style/Widget.Button"
+         android:drawableLeft="@android:drawable/ic_input_add"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="eventoButton"
+        android:text="@string/personagemMenu" />
+
+    <Button
+        android:id="@+id/btnCadastrarMenu"
+        style="@android:style/Widget.Button"
+       android:drawableLeft="@android:drawable/ic_menu_save"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="cadastrarLoot"
+        android:text="@string/cadastrarMenu" />
+
+    <Button
+        android:id="@+id/btnMenuListar"
+        style="@android:style/Widget.Button"
+        android:layout_width="match_parent"
+          android:drawableLeft="@android:drawable/ic_input_get"
+        android:layout_height="wrap_content"
+        android:onClick="listarLoot"
+        android:text="@string/listarLoots" />
+
+    <Button
+        android:id="@+id/btnSair"
+        style="@android:style/Widget.Button"
+           android:drawableLeft="@android:drawable/ic_lock_power_off"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="sair"
+        android:text="@string/sair" />
+    
+     <Button
+        android:id="@+id/btnAbout"
+        style="@android:style/Widget.Button"
+         android:drawableLeft="@android:drawable/ic_dialog_info"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+          android:onClick="eventoButton"
+        android:text="@string/about" />
+
+</LinearLayout>

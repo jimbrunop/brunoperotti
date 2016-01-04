@@ -1,0 +1,46 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+      android:background = "@drawable/background03"
+    android:padding="10dp"
+    tools:context="com.example.loothelper.DadosPersonagemActivity" >
+
+    
+   <TextView
+        style="@android:style/TextAppearance.Holo.Widget.TextView"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/personagem" />
+
+    <EditText
+        android:id="@+id/editPersonagem"
+        style="@android:style/TextAppearance.Holo.Widget.EditText"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/digitePersonagem" />
+
+    <TextView
+        style="@android:style/TextAppearance.Holo.Widget.TextView"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/level" />
+
+    <EditText
+        android:id="@+id/editLevel"
+        style="@android:style/TextAppearance.Holo.Widget.EditText"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/digiteLvl" />
+
+    <Button
+        style="@android:style/TextAppearance.Holo.Widget.Button"
+        android:drawableLeft="@android:drawable/ic_input_add"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:onClick="enviar"
+        android:text="@string/enviar" />
+
+</LinearLayout>

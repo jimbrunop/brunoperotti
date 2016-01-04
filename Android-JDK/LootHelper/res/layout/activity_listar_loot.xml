@@ -1,0 +1,31 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/dragon"
+    android:orientation="vertical"
+    android:padding="10dp"
+    tools:context="com.example.loothelper.ListarLootActivity" >
+
+    <Button
+        style="@android:style/Widget.Button"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:drawableLeft="@android:drawable/ic_menu_close_clear_cancel"
+        android:onClick="sair"
+        android:text="@string/sair" />
+
+    <ListView
+        android:id="@+id/listViewLoots"
+        android:layout_width="fill_parent"
+        android:layout_height="237dp"
+        android:layout_weight="0.77" >
+    </ListView>
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="match_parent"
+        android:layout_height="96dp"
+        android:src="@drawable/characters" />
+
+</LinearLayout>

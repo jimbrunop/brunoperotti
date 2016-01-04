@@ -1,0 +1,59 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="10dp"
+      android:background = "@drawable/background02"
+    tools:context="com.example.loothelper.DadosItemActivity" >
+    
+   <TextView
+        style="@android:style/TextAppearance.Holo.Widget.TextView"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/item" />
+
+    <EditText
+        android:id="@+id/editItem"
+        style="@android:style/TextAppearance.Holo.Widget.EditText"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/digiteItem" />
+
+    <TextView
+        style="@android:style/TextAppearance.Holo.Widget.TextView"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/tipo" />
+
+    <EditText
+        android:id="@+id/editTipo"
+        style="@android:style/TextAppearance.Holo.Widget.EditText"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/digiteTipo" />
+    
+      <TextView
+        style="@android:style/TextAppearance.Holo.Widget.TextView"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/dano" />
+
+    <EditText
+        android:id="@+id/editDano"
+        style="@android:style/TextAppearance.Holo.Widget.EditText"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/digiteDano" />
+    
+    
+
+    <Button
+        style="@android:style/TextAppearance.Holo.Widget.Button"
+        android:layout_width="fill_parent"
+        android:drawableLeft="@android:drawable/ic_input_add"
+        android:layout_height="wrap_content"
+        android:onClick="enviar"
+        android:text="@string/enviar" />
+
+</LinearLayout>
