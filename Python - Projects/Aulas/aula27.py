@@ -1,18 +1,14 @@
-#coding: utf-8
-
-
 def erro(x):
     try:
         eval(x)
     except (TypeError, NameError):
         print("NameError ou TypeError")
-    except ValueError as e:
+    except ValueError:
         print("ValueError")
-        print(type(e))
-        print(e.args)
     except ZeroDivisionError:
         print("ZeroDivisionError")
-
+    else:
+        print("Nenhuma exceção ocorreu")
 
 
 #TypeError

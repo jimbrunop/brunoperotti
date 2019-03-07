@@ -1,19 +1,16 @@
-#coding: utf-8
-
-
 def erro(x):
     try:
         eval(x)
     except (TypeError, NameError):
         print("NameError ou TypeError")
-    except ValueError as e:
+    except ValueError:
         print("ValueError")
-        print(type(e))
-        print(e.args)
     except ZeroDivisionError:
         print("ZeroDivisionError")
-
-
+    else:
+        print("Nenhuma exceção ocorreu")
+    finally:
+        print("vai rodar essa parada nem que seja na porrada")
 
 #TypeError
 erro("int+int")
